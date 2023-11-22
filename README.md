@@ -14,5 +14,5 @@ This repository contains a C implementation of a simple feedforward neural netwo
 ## Compilation and Execution
 To compile and run this project, use the following command in a terminal:
 ```bash
-gcc neural_network.c -o neural_network -lm
+gcc main.c -o neural_network -lm
 ./neural_network
