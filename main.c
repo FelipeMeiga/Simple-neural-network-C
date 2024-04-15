@@ -90,7 +90,7 @@ void back_propagation(NeuralNetwork *net, double *entrada, double saida_esperada
         // derivative sigmoid function
         double delta = erro * (neuron->output * (1 - neuron->output));
 
-        // Ajusta os pesos e bias da camada de saída
+        // ajusts weight and bias for output layer
         for (int j = 0; j < net->hidden_layer.n_neurons; j++) {
             neuron->weight[j] -= learning_rate * delta * net->hidden_layer.neurons[j].output;
         }
